@@ -1,0 +1,33 @@
+//index.html code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Reminder System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Email Reminder System</h1>
+
+    <form id="reminderForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter recipient email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="Enter reminder subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Type your reminder message" rows="4" required></textarea>
+
+      <label for="date">Reminder Date & Time</label>
+  
+    <input type="datetime-local" id="date" required>
+
+      <button type="submit">Set Reminder</button>
+    </form>
+
+   <p id="status"></p>
+  </div>
